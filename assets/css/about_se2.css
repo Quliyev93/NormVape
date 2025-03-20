@@ -1,0 +1,102 @@
+.about_se2 {
+    height: 530px;
+    background-image: url(../images/home_se2Photo/smoke2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_se2 i {
+    font-size: 30px;
+    border: 2px solid #979797;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.about_se2_left,
+.about_se2_right {
+    width: 300px;
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about_se2_left_par1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.par2 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.par2 h3 {
+    font-size: 22px;
+}
+
+.par2 p {
+    color: #d0d0d0;
+}
+
+.about_se2_center {
+    position: relative;
+}
+
+.about_se2_center_title {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+
+.about_se2_center_title h1 {
+    font-size: 40px;
+    word-spacing: 5px;
+}
+
+
+
+
+/*-----RESPONSIVE-------------*/
+
+
+
+@media only screen and (max-width:1250px) {
+    .about_se2_center img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .about_se2_center {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about_se2 {
+        height: 500px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 0 50px;
+        gap: 30px;
+    }
+}

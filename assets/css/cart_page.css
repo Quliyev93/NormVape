@@ -1,0 +1,96 @@
+@import url(./shopsingle.css);
+
+
+.cart_page {
+    color: #fff;
+    padding: 100px 0;
+}
+
+table img {
+    width: 70px;
+    height: 70px;
+}
+
+.td_first {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+td>input {
+    width: 100px;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #4e4e4e;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: transparent;
+    color: white;
+}
+
+tr {
+    border-bottom: 2px solid #4e4e4e;
+    transition: .2s;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: transparent;
+}
+
+tr:hover {
+    background-color: #000;
+}
+
+td>i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cart_total {
+    float: right;
+    margin-right: 80px;
+    font-size: 22px;
+}
+
+
+@media only screen and (max-width:800px) {
+    .cart_page {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 600px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,101 @@
+@import url("./home.css");
+@import url("./nav.css");
+@import url("./navupper.css");
+@import url("./home_se1.css");
+@import url("./home_se2.css");
+@import url("./home_se3.css");
+@import url("./home_se4.css");
+@import url("./home_se5.css");
+@import url("./home_se6.css");
+@import url("./home_se7.css");
+@import url("./home_se8.css");
+@import url("./footer.css");
+
+:root {
+    --main-color: rgb(140, 194, 255);
+    --secondary-color: #212121;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+
+
+
+
+.loader_main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1112;
+    background: #000;
+    background-size: 400% 400%;
+    animation: fadeIn 10s infinite alternate;
+}
+
+
+
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    display: grid;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    grid-area: 1/1;
+    --c: no-repeat radial-gradient(farthest-side, var(--main-color) 92%, #000);
+    background:
+        var(--c) 50% 0,
+        var(--c) 50% 100%,
+        var(--c) 100% 50%,
+        var(--c) 0 50%;
+    background-size: 22px 22px;
+    animation: l12 1s infinite;
+}
+
+.loader::before {
+    margin: 4px;
+    filter: hue-rotate(45deg);
+    background-size: 14px 14px;
+    animation-timing-function: linear
+}
+
+@keyframes l12 {
+    100% {
+        transform: rotate(.5turn)
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(0%);
+    }
+
+    20% {
+        transform: translateY(0%);
+    }
+
+    30% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}

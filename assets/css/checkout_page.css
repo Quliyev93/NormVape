@@ -1,0 +1,150 @@
+@import url(./cart_page.css);
+
+.checkout {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 120px 60px;
+}
+
+.checkout_left {
+    width: 70%;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.checkout_right {
+    width: 30%;
+}
+
+.checkout_left form {
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.checkout_left input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.checkout_left label {
+    font-size: 18px;
+}
+
+.checkout_left select {
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #777777;
+    width: 100%;
+}
+
+.checkout_left select option {
+    color: #000;
+}
+
+.checkout_left .check1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkout_left .check1 input {
+    width: 15px;
+    height: 15px;
+}
+
+.checkout_left textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    height: 200px;
+}
+
+.checkout_right {
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout_right .orders {
+    width: 100%;
+    font-size: 20px;
+}
+
+.checkout_right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.orders2>input {
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.orders3 p {
+    color: #d0d0d0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.orders3 button {
+    margin-top: 30px;
+}
+
+
+
+@media only screen and (max-width:1000px) {
+    .checkout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 120px 60px;
+    }
+
+    .checkout_left {
+        width: 90%;
+        background: var(--secondary-color);
+        border-radius: 10px;
+    }
+
+    .checkout_right {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .checkout {
+        gap: 30px;
+        padding: 60px 20px;
+    }
+}

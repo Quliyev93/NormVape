@@ -1,0 +1,162 @@
+.about_se1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 130px 0 100px 0;
+}
+
+.video_link {
+    width: 720px;
+    position: relative;
+}
+
+.video_link img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.click {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background: #ffffff97;
+    border-radius: 50%;
+    animation: heart 1s ease infinite;
+}
+
+.click>i {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+@keyframes heart {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        background: #fff;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        background: transparent;
+    }
+}
+
+.about_se1_right {
+    width: 650px;
+    color: #fff;
+}
+
+.about_se1_right_title {
+    display: flex;
+    align-items: start;
+}
+
+.about_se1_right_title h1 {
+    font-size: 40px;
+}
+
+.circle_anim2 {
+    transform: translateY(-22px);
+}
+
+.about_se1_right p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #d0d0d0;
+}
+
+.about_se1_right button {
+    margin-top: 30px;
+}
+
+.about_se1_right p:nth-child(2),
+.about_se1_right button {
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+/*-----RESPONSIVE-------------*/
+
+
+@media only screen and (max-width:1450px) {
+    .video_link {
+        width: 600px;
+    }
+
+    .about_se1_right {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .video_link {
+        width: 450px;
+    }
+
+    .about_se1_right {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .about_se1 {
+        flex-direction: column;
+    }
+
+    .video_link {
+        width: 650px;
+    }
+
+    .about_se1_right {
+        width: 650px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .video_link {
+        width: 450px;
+    }
+
+    .about_se1_right {
+        width: 450px;
+    }
+
+    .about_se1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    .about_se1_right_title h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .video_link {
+        width: 350px;
+    }
+
+    .about_se1_right {
+        width: 350px;
+    }
+}

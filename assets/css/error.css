@@ -1,0 +1,90 @@
+@import url(./register.css);
+
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.error_container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error_container h1 {
+    font-size: 400px;
+    margin-bottom: -50px;
+}
+
+.error_container h2 {
+    font-size: 50px;
+}
+
+.error_container p {
+    font-size: 25px;
+    color: #d0d0d0;
+}
+
+.error_container h1>u {
+    color: var(--main-color);
+}
+
+.error button>.text,
+.error button>span:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.error button {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+/*-----RESPONSIVE-------------*/
+
+
+@media only screen and (max-width:900px) {
+    .error_container h1 {
+        font-size: 200px;
+        margin-bottom: 0;
+    }
+
+    .error_container h2 {
+        font-size: 40px;
+    }
+
+    .error_container p {
+        font-size: 22px;
+        margin-top: 10px;
+        color: #d0d0d0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .error_container h1 {
+        font-size: 150px;
+        margin-bottom: 0;
+    }
+
+    .error_container h2 {
+        font-size: 30px;
+    }
+
+    .error_container p {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #d0d0d0;
+    }
+}

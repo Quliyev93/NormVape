@@ -1,0 +1,269 @@
+.contact {
+    color: #fff;
+    padding-top: 135px;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.contact_left_img {
+    position: relative;
+}
+
+.contact_left_img>img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.contact_left_img img:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+.contact_left_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 40px 30px 40px 80px;
+    width: 700px;
+}
+
+.contact_left_text h1 {
+    font-size: 50px;
+}
+
+.contact_left_text p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.icons2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.icons2 a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons2 a i,
+.icons2 div i {
+    transform: translateY(15px);
+    font-size: 22px;
+}
+
+.icons2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#linkGmail {
+    color: #fff;
+    cursor: pointer;
+}
+
+#linkGmail:active,
+#linkGmail:focus {
+    color: var(--main-color);
+}
+
+.contact_right form {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 650px;
+    gap: 25px;
+}
+
+.contact_right form input:not(.checkbox_label>input),
+.contact_right form textarea,
+.contact_right form select {
+    width: 100%;
+    height: 55px;
+    background: var(--secondary-color);
+    border: 2px solid #4e4e4e;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    transition: .4s;
+}
+
+.contact_right input::placeholder {
+    color: #fff;
+}
+
+.contact_right textarea::placeholder {
+    color: #fff;
+}
+
+.contact_right form select {
+    color: #fff;
+}
+
+.contact_right form textarea {
+    color: #fff;
+    height: 200px;
+}
+
+.contact_right form input:focus,
+.contact_right form textarea:focus {
+    border: 2px solid var(--main-color);
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_right button {
+    width: 180px;
+}
+
+.contact_map {
+    width: 100%;
+    height: 900px;
+    padding: 100px 0 50px 0;
+}
+
+.contact_map>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/*-----RESPONSIVE-------------*/
+
+
+@media only screen and (max-width:1450px) {
+    .contact_left_img>img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .contact_right form {
+        width: 550px;
+        gap: 25px;
+    }
+
+    .contact_left_text {
+        padding: 40px 30px 40px 80px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .contact_left_img>img {
+        width: 500px;
+        height: 600px;
+    }
+
+    .contact_right form {
+        width: 450px;
+        gap: 25px;
+    }
+
+    .contact_left_text {
+        padding: 30px 20px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .contact_container {
+        flex-direction: column;
+    }
+
+    .contact_left_img>img {
+        width: 700px;
+        height: 600px;
+    }
+
+    .contact_right form {
+        width: 700px;
+        gap: 25px;
+    }
+
+    .contact_left_text {
+        padding: 40px 30px 40px 80px;
+        width: 650px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .contact_left_img>img {
+        width: 500px;
+        height: 600px;
+    }
+
+    .contact_right form {
+        width: 500px;
+        gap: 25px;
+    }
+
+    .contact_left_text {
+        padding: 30px 20px 30px 30px;
+        width: 450px;
+    }
+
+    .contact_left_text h1 {
+        font-size: 30px;
+    }
+
+    .contact_left_img img:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        margin-top: 50px;
+    }
+
+    .contact {
+        color: #fff;
+        padding-top: 70px;
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .contact_left_img>img {
+        width: 350px;
+        height: 520px;
+    }
+
+    .contact_left_text h1 {
+        font-size: 26px;
+    }
+
+    .contact_left_text {
+        padding: 20px;
+        width: 350px;
+    }
+
+    .contact_right form {
+        width: 350px;
+        gap: 25px;
+    }
+}
